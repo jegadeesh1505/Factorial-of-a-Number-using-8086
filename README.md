@@ -17,13 +17,35 @@ To write and execute Assembly Language Programs to perform factorial  of given n
 
 # Program:
 
+```asm
+CODE SEGMENT
+ASSUME CS:CODE, DS:CODE
+ORG 1000H
+MOV SI, 2000H
+MOV AL, [SI]
+MOV BL, AL
+MOV AX, 0001H
+CMP BL, 01H
+JE STORE
+MUL BL
+DEC BL
+JMP FACTL
+MOV [SI+02H], AX
+MOV DX, 0000H
+MOV [SI+04H], DX
+MOV AH, 4CH
+INT 21H
+CODE ENDS
 
+```
 
 
 # Manual calculation:
 
 
 # Output:
+
+<img width="735" height="396" alt="Screenshot 2025-10-24 184403" src="https://github.com/user-attachments/assets/337d17c3-46a8-4287-92c5-d1124acf99be" />
 
 
 # Result:
