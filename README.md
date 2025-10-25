@@ -42,6 +42,8 @@ CODE ENDS
 
 # Manual calculation:
 
+* 4! = 4*3*2*1 = 120
+ * 120 in hec = 18
 
 # Output:
 
